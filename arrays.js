@@ -174,7 +174,7 @@ const numArrays = [
 
 // Complete Exercise 13 below...
 
-
+const numList = numArrays[numArrays.length - 1]
 
 console.log('Exercise 13 Result:\n', numList);
 
@@ -185,7 +185,7 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-
+const num = numArrays[2][1]
 
 console.log('Exercise 14 Result:\n', num);
 
@@ -197,6 +197,11 @@ Exercise 15:
 
 // Complete Exercise 15 below...
 
-
+let total = 0
+numArrays.forEach(function (n) {
+    n.forEach(function (n) {
+        total += n
+    })
+})
 
 console.log('Exercise 15 Result:\n', total);
